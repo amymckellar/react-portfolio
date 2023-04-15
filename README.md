@@ -21,6 +21,8 @@ For this challenge, I had to create a Portfolio using React
 
 ## Link
 
+https://amymckellar.github.io/react-portfolio/
+
 ## Questions?
 
 If you have any questions, please contact me at:
