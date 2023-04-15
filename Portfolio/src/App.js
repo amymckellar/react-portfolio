@@ -2,13 +2,22 @@ import React from "react";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 
-const App = () => {
+export default function Portfolio() {
+  const [currentPage, setCurrentPage] = React.useState("About");
+
+  const renderPage = () => {
+    if (currentPage === "About") {
+      return <About />;
+    }
+    return <Projects />;
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return (
     <div>
-      <About />
-      <Projects />
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <div>{renderPage()}</div>
     </div>
   );
-};
-
-export default App;
+}
