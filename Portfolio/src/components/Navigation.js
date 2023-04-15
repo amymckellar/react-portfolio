@@ -9,14 +9,8 @@ function Navigation({ currentPage, handlePageChange }) {
         <a href="#about" onClick={() => handlePageChange("About")}>
           About Me
         </a>
-        <a href="#portfolio" onClick={() => handlePageChange("Portfolio")}>
-          Portfolio
-        </a>
-        <a href="#contact" onClick={() => handlePageChange("Contact")}>
-          Contact
-        </a>
-        <a href="#resume" onClick={() => handlePageChange("Resume")}>
-          Resume
+        <a href="#Projects" onClick={() => handlePageChange("Portfolio")}>
+          Projects
         </a>
       </div>
     </nav>
